@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2782e3;
+    font-size: 15px;
+    line-height: 1.5;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: #5ae88e;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.title {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin: 0px;
+    /* box-shadow: 0px 2px #bababa; */
+    background: white;
+    font-size: 34px;
+    color: navy;
+}
+
+
+.input {
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.small-box {
+    margin-inline: 10px;
+}
+
+.small-box-title {
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-left: 4px;
+    color: #1073d0;
+}
+
+.input input {
+    width: 100%;
+    outline: none;
+    min-height: 50px;
+    border: 2px solid #1073d0;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    color: #1073d0;
+    font-size: 17px;
+}
+
+.input input:focus {
+    border: 2px solid orange;
+    outline: none;
+}
+
+
+.show-age {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    margin: 20px 20px;
+    height: 50px;
+    text-align: center;
+}
+
+.submit-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.submit-div input {
+    width: 150px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #0761b6;
+    color: #ffffff;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+.submit-div input:hover {
+    background-color: #003669;
+    cursor: pointer;
+}
+
+/* media queries  */
+
+@media (width<500px) {
+    .container {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0px;
+    }
+}
